@@ -33,12 +33,19 @@
 
     .header__logo{
         height: 60px;
+        transition: transform 0.9s;
     }
+
+    .header__logo:hover{
+        transform: rotate(360deg) scaleY(0.9);
+    }
+
     /*logo menu*/
     .header__label{
         display: flex;
         align-items: center;
         height: 100%;
+        cursor: pointer;
     }
 
     .menu__logo{
@@ -71,7 +78,6 @@
         display: none;
     }
 
-
 /*MAIN*/
 
     .index{
@@ -80,15 +86,11 @@
 
 /*seccion pearljam*/
     .pearljam{
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/fondos/fondopearljam.jpg);
+        background-image: url(../img/fondos/fondopearljam.jpg);
         height: 90vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        font-size: 2.6em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
 /*titulo del background*/
@@ -147,6 +149,7 @@
     /*TIENDA*/
 
     /*titulo*/
+
     .container__title{
         background-color: rgba(226, 226, 226, 1);
         height: 10vh;
@@ -189,23 +192,18 @@
 
     /*DISCOGRAFIA*/
 
-    /*imagen album*/
-    .disco__img{
-        height: 80vh;
-        padding: 20px;
+    .disco{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .disco__img img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 30px;
-    }
-    /*texto*/
     .disco__text{
-        padding: 10px 30px;
+        width: 90%;
         line-height: 1.5em;
         word-spacing: 5px;
+        font-size: 17px;
+        padding: 40px 20px 20px;
     }
 
     /*iframe spotify*/
@@ -297,7 +295,7 @@
 
     /*TABLET*/
 
-    @media only screen and (min-width: 577px) and (max-width:978px){
+    @media only screen and (min-width: 577px) and (max-width:991px){
 
     
     /*HEADER*/
@@ -305,7 +303,7 @@
     .header__label, .menu__checkbox{
         display: none;
     }
-/*nav*/
+    /*nav*/
     .menu{
         background-color: rgba(45, 96, 74, 1);
         height: 15vh;
@@ -315,7 +313,7 @@
         justify-content: space-between;
         align-items: center;
     }
-/*logo*/
+    /*logo*/
     .header__enlace{
         height: 60%;
     }
@@ -323,8 +321,14 @@
     .header__logo{
         height: 100%;
         width: 100%;
+        transition: transform 0.9s;
     }
-/*menu*/
+
+    .header__logo:hover{
+        transform: rotate(360deg);
+    }
+
+    /*menu*/
     .list__menu{
         height: 100%;
         width: 95%;
@@ -335,8 +339,15 @@
 
     .list__menu--a{
         color: white;
+        display: block;
+        transition: transform 0.9s;
     }
-    
+
+    .list__menu--a:hover{
+        transform: scale(1.4);
+        transition: transform 0.9s;
+    }
+
     /*MAIN*/
 
     .index{
@@ -351,15 +362,11 @@
 
     /*seccion pearljam*/
     .pearljam{
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/fondos/fondopearljam.jpg);
+        background-image: url(../img/fondos/fondopearljam.jpg);
         height: 90vh;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
-        font-size: 4em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-position: center center;
     }
 
     /*titulo del background*/
@@ -423,6 +430,37 @@
 
 
     /*TIENDA*/
+
+     .container__title h1{
+        -webkit-animation: roll-in-left 0.6s ease-out both;
+        animation: roll-in-left 0.6s ease-out both;
+    }
+
+    @-webkit-keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-800px) rotate(-540deg);
+                  transform: translateX(-800px) rotate(-540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      @keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-800px) rotate(-540deg);
+                  transform: translateX(-800px) rotate(-540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+
     .container__title{
         background-color: rgba(226, 226, 226, 1);
         height: 8vh;
@@ -474,23 +512,18 @@
 
     /*DISCOGRAFIA*/
 
-    /*imagen album*/
-    .disco__img{
-        height: 80vh;
-        padding: 20px;
+    .disco{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .disco__img img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 30px;
-    }
-    /*texto*/
     .disco__text{
-        padding: 10px 40px;
+        width: 90%;
         line-height: 1.5em;
         word-spacing: 5px;
+        font-size: 17px;
+        padding: 40px 20px 20px;
     }
 
     /*iframe spotify*/
@@ -579,14 +612,14 @@
 }
 
    /*DESKTOP*/
-   @media only screen and (min-width: 979px){
+   @media only screen and (min-width: 992px) and (max-width:1199px){
     
     /*HEADER*/
 
     .header__label, .menu__checkbox{
         display: none;
     }
-/*nav*/
+    /*nav*/
     .menu{
         background-color: rgba(45, 96, 74, 1);
         height: 10vh;
@@ -595,7 +628,7 @@
         justify-content: space-between;
         align-items: center;
     }
-/*logopearl*/
+    /*logopearl*/
     .header__enlace{
         height: 100%;
         margin-left: 20px;
@@ -604,7 +637,13 @@
     .header__logo{
         height: 100%;
         width: 100%;
+        transition: transform 0.9s;
     }
+
+    .header__logo:hover{
+        transform: rotate(360deg) scaleY(0.9);
+    }
+
 /*lista*/
     .list__menu{
         height: 100%;
@@ -617,20 +656,25 @@
 
     .list__menu--a{
         color: white;
+        display: block;
+        transition: transform 0.9s;
+        font-size: 18px;
     }
-    
+
+    .list__menu--a:hover{
+        transform: scale(1.4);
+        transition: transform 0.9s;
+    }
+
     /*MAIN*/
-
-    .index{
-        background-color: rgba(225, 225, 225, 1);
-    }
-
+ 
     /*seccion pearljam*/
     .pearljam{
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/fondos/fondopearljam.jpg);
+        background-image: url(../img/fondos/fondopearljam.jpg);
         height: 90vh;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         font-size: 4em;
         display: flex;
         justify-content: center;
@@ -672,10 +716,10 @@
     /*logos de redes*/
     .footer__redes{
         display: flex;
-        height: 33px;
+        padding: 10px;
+        height: 50px;
         width: 140px;
-        justify-content: space-around;
-        margin-top: 7px;
+        justify-content: space-between;
     }
     
     .footer__redes a img{
@@ -703,6 +747,38 @@
         align-items: center;
         justify-content: center;
     }
+
+    .container__title h1{
+        -webkit-animation: roll-in-left 0.6s ease-out both;
+        animation: roll-in-left 0.6s ease-out both;
+    }
+
+    @-webkit-keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-800px) rotate(-540deg);
+                  transform: translateX(-800px) rotate(-540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      @keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-800px) rotate(-540deg);
+                  transform: translateX(-800px) rotate(-540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      
+
     /*seccion productos*/
 
     /*SECCION PRODUCTOS*/
@@ -782,38 +858,20 @@
 
     /*DISCOGRAFIA*/
 
-    .disco__container{
+    .disco{
         display: flex;
+        align-items: center;
         justify-content: center;
     }
 
-    /*imagen album*/
-    .disco__img{
-        width: 80vw;
-        padding: 50px 20px;
-    }
-
-    .disco__img img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 30px;
-    }
-
-    /*img*/
-    .disco__img img{
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-        object-fit: cover;
-    }
-    /*texto*/
     .disco__text{
-        padding: 40px 10px;
-        width: 100%;
+        width: 90%;
         line-height: 1.5em;
         word-spacing: 5px;
+        font-size: 17px;
+        padding: 40px 20px 20px;
     }
+
     /*seccion ifr*/
     .ifr{
         padding: 10px 0 30px;
@@ -905,6 +963,394 @@
 /*seccion formulario*/
 .form{
     width: 50%;
+}
+/*container*/
+.contacto__form{
+    padding: 20px 0;
+}
+/*label*/
+label{
+    display: inline-block;
+    padding: 12px 0;
+}
+/*inputs*/
+input{
+    background-color: rgb(224, 224, 224);
+    border: none;
+    height: 40px;
+    width: 500px;
+}
+/*textarea*/
+textarea{
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
+/*boton*/
+.submit{
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+}
+
+/*DESKTOP LARGE*/
+
+@media only screen and (min-width: 1200px){
+
+     /*HEADER*/
+
+     .header__label, .menu__checkbox{
+        display: none;
+    }
+    /*nav*/
+    .menu{
+        background-color: rgba(45, 96, 74, 1);
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /*logopearl*/
+    .header__enlace{
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .header__logo{
+        height: 100%;
+        width: 100%;
+        transition: transform 0.9s;
+    }
+
+    .header__logo:hover{
+        transform: rotate(360deg) scaleY(0.9);
+    }
+
+/*lista*/
+    .list__menu{
+        height: 100%;
+        width: 60%;
+        margin-right: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list__menu--a{
+        color: white;
+        display: block;
+        transition: transform 0.9s;
+        font-size: 18px;
+    }
+
+    .list__menu--a:hover{
+        transform: scale(1.4);
+        transition: transform 0.9s;
+    }
+
+    /*MAIN*/
+ 
+    /*seccion pearljam*/
+    .pearljam{
+        background-image: url(../img/fondos/fondopearljam.jpg);
+        height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*titulo del background*/
+    .pearljam h1{
+        color: rgba(74, 156, 121, 0.897);
+    }
+    
+    /*titulo bio*/
+    .container__bio h2{
+        padding: 10px 0 20px;
+    }
+
+    /*contenedor texto*/
+    .container__bio{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        line-height: 1.5em;
+        word-spacing: 5px;
+    }
+
+    footer{
+        background-color: rgba(45, 96, 74, 1);
+    }
+
+    /*container*/
+    .container__footer{  
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /*logos de redes*/
+    .footer__redes{
+        display: flex;
+        padding: 10px;
+        height: 50px;
+        width: 140px;
+        justify-content: space-between;
+        margin-top: 7px;
+    }
+    
+    .footer__redes a img{
+        height: 100%;
+        width: 100%;
+    }
+
+    /*copyright*/
+    .footer__paragraph{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /*TIENDA*/
+
+    .categorias__menu{
+        display: none;
+    }
+
+    /*titulo*/
+    .container__title{
+        background-color: rgba(226, 226, 226, 1);
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container__title h1{
+        -webkit-animation: roll-in-left 0.6s ease-out both;
+        animation: roll-in-left 0.6s ease-out both;
+    }
+
+    @-webkit-keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-800px) rotate(-540deg);
+                  transform: translateX(-800px) rotate(-540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      @keyframes roll-in-left {
+        0% {
+          -webkit-transform: translateX(-800px) rotate(-540deg);
+                  transform: translateX(-800px) rotate(-540deg);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0) rotate(0deg);
+                  transform: translateX(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      
+
+    /*seccion productos*/
+
+    /*SECCION PRODUCTOS*/
+    .productos{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .container__productos--p{
+        padding: 20px 0;
+    }
+
+    span{
+        border: 2px solid rgba(226, 226, 226, 1);
+        border-radius: 20px;
+        padding: 5px 8px;
+    }
+    
+    /*MENU ASIDE*/
+
+    /*aside*/
+    .categorias{
+        width: 23%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /*contenedor*/
+    .categorias__container{
+        width: 220px;
+        padding: 0 20px;
+    }      
+
+    /*h3*/
+    .categorias__container h3{
+        padding-bottom: 10px;
+    }
+    /*li items*/
+    .categorias__ul--li{
+        border-top: 2px solid gray;
+        padding: 20px 20px 20px 0;
+    }
+    /*enlaces*/
+    .categorias__ul--li a{
+        color: gray;
+    }
+
+    /*section contenedor de categorias y grid*/
+    .shop{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*GRID*/
+    .grid{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        gap: 10px;
+        padding: 0 20px 20px 20px
+    }
+    /*grid items*/
+    .grid div{  
+        background-color: aliceblue;
+    }
+
+    .div9{
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .div10{
+        grid-area: 3 / 3 / 4 / 5;
+    }
+
+    /*DISCOGRAFIA*/
+
+    /*texto*/
+
+    .disco{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .disco__text{
+        width: 80%;
+        line-height: 1.5em;
+        word-spacing: 5px;
+        font-size: 17px;
+        padding: 40px 20px 20px;
+    }
+
+    /*seccion ifr*/
+    .ifr{
+        padding: 10px 0 30px;
+    }
+    /*contenedor ifr*/
+    .container__ifr{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*ifr*/
+    iframe{
+        padding: 0 10px;
+        height: 400px;
+        width: 50%;
+    }
+    
+    /*GALERIA*/
+
+    /*grid contenedor*/
+    .grid__container{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 300px);
+        background-color: rgba(45, 96, 74, 0.7);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    /*grid item*/
+    .grid__item{
+        background-color: gray;
+        margin: 5px;
+    }
+
+    /*imagenes*/
+    .grid__container div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*items*/
+    .grid__item:nth-child(8){
+        grid-column-start: span 2;
+    }
+
+    .grid__container :nth-child(9){
+        grid-row-start: span 2;
+    }
+
+    .grid__item:nth-child(11){
+        grid-row-start: span 2;
+    }
+
+    .grid__item:nth-child(12){
+        grid-row-start: span 2;
+    }
+
+    .grid__item:nth-child(15){
+        grid-column-start: span 2;
+    }
+
+/*CONTACTO*/
+/*container*/
+
+.contacto__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*seccion contacto*/
+.contacto{
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*texto*/
+.contacto__text{
+    width: 100%;
+    line-height: 1.5em;
+    word-spacing: 5px;
+    padding: 20px 0;
+    font-size: 1.3em;
+}
+
+.contacto__text p{
+    width: 500px;
+}
+
+/*seccion formulario*/
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 /*container*/
 .contacto__form{
