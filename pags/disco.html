@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,39 +14,90 @@
 
 <body>
 
-    <header> <!--HEADER-->
+    <header>
+        <nav class="navbar navbar-expand-sm">
 
-        <nav class="menu">
-            <!--menu-->
-            <a class="header__enlace" href=""><img class="header__logo" src="../img/logo/logo-pearljam.png" alt="logo"></a>
-                    
-            <label class="header__label" for="checkbox">
-                <img src="../img/icons/menu.svg" alt="menu" class="menu__logo">
-            </label>
-            <input type="checkbox"  id="checkbox" class="menu__checkbox">
+            <div class="container-fluid container-header">
 
-            <ul class="list__menu">
-                <li class="list__menu--link"><a class="list__menu--a" href="../index.html">INICIO</a></li>
-                <li class="list__menu--link"><a class="list__menu--a" href="tienda.html">TIENDA</a></li>
-                <li class="list__menu--link"><a class="list__menu--a" href="disco.html">DISCOGRAFIA</a></li>
-                <li class="list__menu--link"><a class="list__menu--a" href="galeria.html">GALERIA</a></li>
-                <li class="list__menu--link"><a class="list__menu--a" href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logoimg" src="../img/logo/logo-pearljam.png" alt="">
+                </a>
 
+              <div class="dropmenu" type=" menu-logo" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img class="menu-logo" src="../img/icons/menu.svg" alt=""></span>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="../index.html">INICIO</a>
+                  </li>
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="tienda.html">TIENDA</a>
+                  </li>
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="disco.html">
+                        DISCOGRAFÍA
+                    </a>
+                  </li>
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="galeria.html">
+                        GALERIA
+                    </a>        
+                  </li>
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="contacto.html">
+                        CONTACTO
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main> <!--MAIN-->
         <div class="container__title">
             <h1>DISCOGRAFÍA</h1>
         </div>
+        <div class="container-fluid container-fluid--disc">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active container-disc">
+                    <img src="https://www.wikirock.org/wp-content/uploads/2020/08/PearlJamTen.jpg" class="d-block w-100 img-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item container-disc">
+                    <img src="https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/2022-07/pearl-jam%20%281%29.jpg" class="d-block w-100 img-carousel" alt="...">
+                  </div>
+                  <div class="carousel-item container-disc">
+                    <img src="https://indiehoy.com/wp-content/uploads/2021/08/pearl-jam-1200x675.jpg" class="d-block w-100 img-carousel" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
  
         <section class="disco">
                 
                 <div class="disco__text">
+                    <h2>LOREM</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rem possimus ducimus, distinctio quaerat libero expedita laudantium hic ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labore nihil delectus expedita accusantium laboriosam impedit laborum ex, tempore eveniet, nemo quae dolore incidunt quasi aliquid vero! ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labo ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labo ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labo nulla earum sint labore nihil delectus expedita accusantium laboriosam impedit laborum ex, tempore eveniet, nemo quae dolore incidunt quasi aliquid vero! ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labo ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adip
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rem possimus ducimus, distinctio quaerat libero expedita laudantium hic ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labore nihil delectus expedita accusantium laboriosam impedit laborum ex, tempore eveniet, nemo quae dolore incidunt quasi aliquid vero! ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labo ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labo ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labo nulla earum sint labore nihil delectus expedita accusantium laboriosam impedit laborum ex, tempore eveniet, nemo quae dolore incidunt quasi aliquid vero! ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nulla earum sint labo ex voluptate error maxime. Vel, similique consequatur beatae ex illum nihil dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque quas accusantium error optio libero, reprehenderit fuga nisi dignissimos iure facilis earum dicta dolor voluptatem, nostrum maiores voluptatibus iste ad?Lorem ipsum dolor sit amet consectetur, adip
                     </p>
+
                 </div> 
 
         </section>
@@ -60,21 +112,20 @@
 
     </main>
 
-    <footer> <!--FOOTER-->
-        <div class="container__footer"> 
+    <footer> 
             
-            <div class="footer__redes"> <!--redes-->
-                <a href=""><img src="../img/redes/logoig.png" alt="instagram"></a>
-                <a href=""><img src="../img/redes/logolinkedin.png" alt="linkedin"></a>
-                <a href=""><img src="../img/redes/logotw.png" alt="twitter"></a>
-            </div>
-            
-            <div class="footer__paragraph"> <!--parrafo-->
-                <p>Copyright</p>
-            </div>
+      <div class="footer__redes">
+          <a href=""><img src="../img/redes/logoig.png" alt="instagram"></a>
+          <a href=""><img src="../img/redes/logolinkedin.png" alt="linkedin"></a>
+          <a href=""><img src="../img/redes/logotw.png" alt="twitter"></a>
+      </div>
 
-        </div>
-    </footer> 
-   
+      <div class="footer__text">
+          <p>Copyright</p>
+      </div>
+          
+  </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
 </body>
 </html>

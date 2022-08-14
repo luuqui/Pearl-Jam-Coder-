@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,26 +14,52 @@
 
 <body>
 
-    <header> <!--HEADER-->
+    <header>
+        <nav class="navbar navbar-expand-sm">
 
-        <nav class="menu">
-            <!--menu-->
-            <a class="header__enlace" href=""><img class="header__logo" src="../img/logo/logo-pearljam.png" alt="logo"></a>
-                    
-            <label class="header__label" for="checkbox">
-                <img src="../img/icons/menu.svg" alt="menu" class="menu__logo">
-            </label>
-            <input type="checkbox"  id="checkbox" class="menu__checkbox">
+            <div class="container-fluid container-header">
 
-            <ul class="list__menu">
-                <li class="list__menu--link"><a class="list__menu--a" href="../index.html">INICIO</a></li>
-                <li class="list__menu--link"><a class="list__menu--a" href="tienda.html">TIENDA</a></li>
-                <li class="list__menu--link"><a class="list__menu--a" href="disco.html">DISCOGRAFIA</a></li>
-                <li class="list__menu--link"><a class="list__menu--a" href="galeria.html">GALERIA</a></li>
-                <li class="list__menu--link"><a class="list__menu--a" href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logoimg" src="../img/logo/logo-pearljam.png" alt="">
+                </a>
 
+              <div class="dropmenu" type=" menu-logo" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img class="menu-logo" src="../img/icons/menu.svg" alt=""></span>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="../index.html">INICIO</a>
+                  </li>
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="tienda.html">TIENDA</a>
+                  </li>
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="disco.html">
+                        DISCOGRAFÍA
+                    </a>
+                  </li>
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="galeria.html">
+                        GALERIA
+                    </a>        
+                  </li>
+
+                  <li class="nav-item item-color">
+                    <a class="nav-link--a" href="contacto.html">
+                        CONTACTO
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     
     <main class="contactomain"> <!--MAIN-->
@@ -40,55 +67,71 @@
             <h1>CONTACTO</h1>
         </div>
         
-        <div class="contacto__container">
             <section class="contacto">
                 <div class="contacto__text">
                     <p>Nos interesa conocerte y saber tù opinion al respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias. Recorda que tù opinion es de gran interes!</p>
                 </div>
             </section>
             
-            <section class="form">
-                <div class="contacto__form">
-                    <form action="">
-                        <label for="Nombre">NOMBRE</label>
-                        <br>
-                        <input type="name">
-                        <br>
-                        
-                        <label for="Email">EMAIL</label>
-                        <br>
-                        <input type="email">
-                        <br>
-                        
-                        <label for="textarea">MENSAJE</label>
-                        <br>
-                        <textarea name="textarea"></textarea>
-                        <br>
-                        <div class="container__submit">
-                            <input class="submit" type="submit" value="ENVIAR">
-                        </div>
-                    </form>
-                </div>
+            <section class="section-form container">
+                
+                <form class="row g-3 form-bs">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Direccion</label>
+                      <input type="text" class="form-control" id="inputAddress">
+                    </div>
+
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Referencia</label>
+                      <input type="text" class="form-control" id="inputAddress2">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Provincia</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Elegir</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-color">Ingresa!</button>
+                    </div>
+                  </form>
+
             </section>
-        </div>
-    
+
     </main>
 
-    <footer> <!--FOOTER-->
-        <div class="container__footer"> 
+    <footer class="footer-contact"> 
             
-            <div class="footer__redes"> <!--redes-->
-                <a href=""><img src="../img/redes/logoig.png" alt="instagram"></a>
-                <a href=""><img src="../img/redes/logolinkedin.png" alt="linkedin"></a>
-                <a href=""><img src="../img/redes/logotw.png" alt="twitter"></a>
-            </div>
-            
-            <div class="footer__paragraph"> <!--parrafo-->
-                <p>Copyright</p>
-            </div>
+      <div class="footer__redes">
+          <a href=""><img src="../img/redes/logoig.png" alt="instagram"></a>
+          <a href=""><img src="../img/redes/logolinkedin.png" alt="linkedin"></a>
+          <a href=""><img src="../img/redes/logotw.png" alt="twitter"></a>
+      </div>
 
-        </div>
-    </footer>   
+      <div class="footer__text">
+          <p>Copyright</p>
+      </div>
+          
+  </footer> 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
