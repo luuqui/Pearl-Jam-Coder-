@@ -356,6 +356,11 @@ header{
   @media only screen and (min-width: 992px) and (max-width:1199px){
 
     /*header*/
+
+    .nav{
+        margin-right: 60px;
+    }
+
     .dropmenu{
         display: none;
     }
@@ -373,10 +378,21 @@ header{
         display: inline-block;
         padding: 0.5rem 1rem;
         text-decoration: none;
+        transition: transform 0.9s;
+        transition: 1s;
     }
-    
+
+    .nav-link--a:hover{
+        color: white; transition: 1s;
+        transform: scale(1.1);
+    }
+
+    .ancla-img{
+        margin-left: 80px;
+    }
+
     .logoimg{
-        height: 80px;
+        height: 90px;
         transition: transform 0.9s;
     }
     
@@ -441,6 +457,8 @@ header{
         justify-content: center;
         font-size: 1.8em;
     }
+
+    
 
     .container__productos{
         padding: 0 50px 20px;
@@ -525,9 +543,6 @@ header{
     
     /*header*/
 
-    .ancla-img{
-
-    }
 
     .nav{
         margin-right: 60px;
@@ -550,13 +565,13 @@ header{
         display: inline-block;
         padding: 0.5rem 1rem;
         text-decoration: none;
+        transition: transform 0.9s;
         transition: 1s;
     }
 
     .nav-link--a:hover{
-        color: white;
-        transition: 1s;
-        transform: skewY(20px);
+        color: white; transition: 1s;
+        transform: scale(1.1);
     }
 
     .ancla-img{
