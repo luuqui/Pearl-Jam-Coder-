@@ -1,0 +1,19 @@
+{
+  "name": "pearl-jam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luuqui/Pearl-Jam-Coder-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luuqui/Pearl-Jam-Coder-/issues"
+  },
+  "homepage": "https://github.com/luuqui/Pearl-Jam-Coder-#readme"
+}
