@@ -4,12 +4,168 @@
     box-sizing: border-box;
 }
 
-header{
-    background-color: rgba(45, 96, 74, 1);
+h1{
+    font-size: var(--font-size-h1);
+}
+
+h2{
+    font-size: var(--font-size-h2);
+}
+h3{
+    font-size: var(--font-size-h3);
+}
+
+:root{
+    --font-size-h1: 2.2em;
+    --font-size-h2: 1.8em;
+    --font-size-h3: 1.3em;
+}
+
+/*index*/
+
+    .pearljam{
+        background-image: url(../img/fondos/fondopearljam.jpg);
+        height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .bio__text h1{
+        padding: 15px 0px 5px; 
+    }
+
+    .bio__text h2{
+        padding: 5px 0;
+        margin: 0;
+    }
+    .bio__text h3{
+        padding: 5px 0;
+    }
+
+    .bio__text p{
+        padding: 0 20px;
+    }
+
+        /*tienda*/
+
+    .container__title{
+        background-color: rgba(226, 226, 226, 1);
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container__title h2{
+        font-size: var(--font-size-h1);
+        -webkit-animation: roll-in-left 0.6s ease-out both;
+        animation: roll-in-left 0.6s ease-out both;
+    }
+    
+    @-webkit-keyframes roll-in-left {
+        0% {
+            -webkit-transform: translateX(-800px) rotate(-540deg);
+            transform: translateX(-800px) rotate(-540deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+            opacity: 1;
+        }
+    }
+        @keyframes roll-in-left {
+            0% {
+            -webkit-transform: translateX(-800px) rotate(-540deg);
+                    transform: translateX(-800px) rotate(-540deg);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateX(0) rotate(0deg);
+                    transform: translateX(0) rotate(0deg);
+            opacity: 1;
+            }
+        }
+    
+    .container__productos{
+        padding: 0 50px 20px;
+    }
+    
+    .container__productos h3{
+        padding: 20px 0;
+        margin: 0;
+    }
+    
+    .col-flex{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    
+    .btn-color{
+        background-color: rgba(226, 226, 226, 1);
+        }
+
+    /*discografia*/
+
+    .disco__text{
+        padding: 1em 2em;
+    }
+    
+    .disco__text h3{
+        text-align: center;
+    }
+
+    .disco__text p{
+        padding: 0px 20px;
+    }
+
+    .container__ifr{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    iframe{
+        padding: 10px 20px 20px;
+        width: 100%;
+        height: 400px;
+    }
+
+    /*contacto*/
+
+    .contacto{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .contacto__text{
+        padding: 15px 15px 15px;
+        width: 800px;
+        text-align: center;
+    }  
+
+    .contacto__text p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-form{
+        padding-bottom: 15px;
+    }
+
+    .btn-color{
+        background-color: rgba(226, 226, 226, 1);
+    }
+    
+    
+    header{
+        background-color: rgba(45, 96, 74, 1);
 }
 
     /*mobile*/
-
 @media only screen and (max-width: 767px){
 
     /*header*/
@@ -39,149 +195,27 @@ header{
     .logoimg:hover{
         transform: rotate(360deg);
     }
-    
-    /*footer*/
-    footer{
-        background-color: rgba(45, 96, 74, 1);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+
+    .row-gal{
+        margin: 20px;
+        background-color: rgba(44, 92, 71, 0.687);
+        padding: 5px;
+        border-radius: 10px;
     }
-
-    .footer__redes{
-        height: 30px;
-        width: 150px;
-        margin: 10px 0;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .footer__redes img{
-        height: 100%;
-        width: 100%;
-    }
-    
-    /*INDEX*/
-    .pearljam{
-        background-image: url(../img/fondos/fondopearljam.jpg);
-        height: 90vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .bio__text h2{
-        padding: 20px 0;
-        margin: 0;
-        font-size: 1.3em;
-    }
-
-    .bio__text p{
-        padding: 0 20px;
-    }
-
-    .productos{
-        margin-bottom: 10px;
-    }
-
-    /*TIENDA*/
-
-    .container__title{
-        background-color: rgba(226, 226, 226, 1);
-        height: 10vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8em;
-    }
-
-    .container__productos{
-        padding: 0 50px 20px;
-    }
-
-    .container__productos h2{
-        padding: 20px 0;
-        margin: 0;
-        font-size: 1.3em;
-    }
-
-    aside{
-        display: none;
-    }
-
-    .col-flex{
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-    }
-
-    .btn-color{
-        background-color: rgba(226, 226, 226, 1);
-    }
-
-    /*DISCOGRAFIA*/
-
-    .container-fluid--disc{
-        margin-top: 15px;
-    }
-
-    
-    .img-carousel{
-        height: 220px;
-        width: 100%;
-    }
-
-    .disco__text h2{
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.3em;
-    }
-
-    .disco__text p{
-        padding: 0px 20px;
-    }
-
-    iframe{
-        padding: 10px 20px 20px;
-        width: 100%;
-        height: 400px;
-    }
-
-    /*GALERIA*/
 
     .row-gal img{
         width: 100%;
         height: 100%;
         padding: 10px;
     }
-
-    /*CONTACTO*/
-
-    .contacto__text{
-        padding: 15px 15px 15px;
-    }  
-
-    .contacto__text p{
-        padding: 0;
-        margin: 0;
-    }
-
-    .section-form{
-        padding-bottom: 15px;
-    }
-
-    .btn-color{
-        background-color: rgba(226, 226, 226, 1);
-    }
 }
 
-  /*TABLET*/
+/*TABLET*/
 
-  @media only screen and (min-width: 576px) and (max-width:991px){
+@media only screen and (min-width: 576px) and (max-width:991px){
 
     /*header*/
-
+    
     .dropmenu{
         display: none;
     }
@@ -206,157 +240,33 @@ header{
         height: 80px;
         transition: transform 0.9s;
     }
-        
+    
     .logoimg:hover{
         transform: rotate(360deg);
-    }
-
-        
-
-    /*footer*/
-
-    footer{
-        background-color: rgba(45, 96, 74, 1);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer__redes{
-        height: 30px;
-        width: 150px;
-        margin: 10px 0;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .footer__redes img{
-        height: 100%;
-        width: 100%;
-    }
-
-    /*index*/
-
-    .pearljam{
-        background-image: url(../img/fondos/fondopearljam.jpg);
-        height: 90vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-    
-    .bio__text h2{
-        padding: 20px 0;
-        margin: 0;
-        font-size: 1.3em;
-    }
-    
-    .bio__text p{
-        padding: 0 20px;
-    }
-    
-    .productos{
-        margin-bottom: 10px;
-    }
-
-    /*tienda*/
-
-    .container__title{
-        background-color: rgba(226, 226, 226, 1);
-        height: 10vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8em;
-    }
-    
-    .container__productos{
-        padding: 0 50px 20px;
-    }
-    
-    .container__productos h2{
-        padding: 20px 0;
-        margin: 0;
-        font-size: 1.3em;
-    }
-    
-    aside{
-        display: none;
-    }
-    
-    .col-flex{
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-    }
-    
-    .btn-color{
-        background-color: rgba(226, 226, 226, 1);
-    }
-
-    /*discografia*/
-
-    .container-fluid--disc{
-        margin-top: 15px;
-    }
-    
-        
-    .img-carousel{
-        height: 400px;
-        width: 100%;
-    }
-    
-    .disco__text h2{
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.3em;
-    }
-    
-    .disco__text p{
-        padding: 0px 20px;
-    }
-    
-    iframe{
-        padding: 10px 20px 20px;
-        width: 100%;
-        height: 400px;
-    }
-        
-    /*galeria*/
-
-    .row-gal img{
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-    }
-
-    /*contacto*/
-
-    .contacto__text{
-        padding: 20px 15px 20px;
-        text-align: center;
-    }  
-    
-    .contacto__text p{
-        padding: 0;
-        margin: 0;
-    }
-    
-    .btn-color{
-        background-color: rgba(226, 226, 226, 1);
     }
 
     .section-form{
         height: 65vh;
     }
-  }
 
-  /*DESKTOP*/
-  @media only screen and (min-width: 992px) and (max-width:1199px){
+    .row-gal{
+        margin: 20px;
+        background-color: rgba(44, 92, 71, 0.687);
+        border-radius: 10px;
+    }
 
-    /*header*/
+    .row-gal img{
+        width: 100%;
+        height: 100%;
+        padding: 12px 0px;
+    }
 
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 992px) and (max-width:1199px){
+
+/*header*/      
     .nav{
         margin-right: 60px;
     }
@@ -400,186 +310,41 @@ header{
         transform: rotate(360deg);
     }
 
-    /*footer*/
-
-    footer{
-        background-color: rgba(45, 96, 74, 1);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__redes{
-        height: 30px;
-        width: 150px;
-        margin: 10px 0;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .footer__redes img{
-        height: 100%;
-        width: 100%;
-    }
-
-    /*index*/
-
-    .pearljam{
-        background-image: url(../img/fondos/fondopearljam.jpg);
-        height: 90vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .bio__text h2{
-        padding: 20px 0;
-        margin: 0;
-        font-size: 1.3em;
-    }
-
-    .bio__text p{
-        padding: 0 20px;
-    }
-
     .productos{
         margin-bottom: 10px;
-    }
-
-    /*tienda*/
-
-    .container__title{
-        background-color: rgba(226, 226, 226, 1);
-        height: 10vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8em;
-    }
-
-    .container__title h1{
-        -webkit-animation: roll-in-left 0.6s ease-out both;
-        animation: roll-in-left 0.6s ease-out both;
-    }
-
-    @-webkit-keyframes roll-in-left {
-        0% {
-          -webkit-transform: translateX(-800px) rotate(-540deg);
-                  transform: translateX(-800px) rotate(-540deg);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0) rotate(0deg);
-                  transform: translateX(0) rotate(0deg);
-          opacity: 1;
-        }
-      }
-      @keyframes roll-in-left {
-        0% {
-          -webkit-transform: translateX(-800px) rotate(-540deg);
-                  transform: translateX(-800px) rotate(-540deg);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0) rotate(0deg);
-                  transform: translateX(0) rotate(0deg);
-          opacity: 1;
-        }
-      }
-
-    .container__productos{
-        padding: 0 50px 20px;
-    }
-
-    .container__productos h2{
-        padding: 20px 0;
-        margin: 0;
-        font-size: 1.3em;
-    }
-
-    .col-flex{
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-    }
-
-    .btn-color{
-        background-color: rgba(226, 226, 226, 1);
-    }
-
-    /*discografia*/
-
-    
-    .container-fluid--disc{
-        margin-top: 15px;
-    }
-    
-    .img-carousel{
-        height: 600px;
-        width: 100%;
-    }
-
-    .disco__text h2{
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.3em;
-    }
-
-    .disco__text p{
-        padding: 0px 20px;
-    }
-
-    iframe{
-        padding: 10px 20px 20px;
-        width: 100%;
-        height: 400px;
-    }
-
-    /*galeria*/
-
-    .row-gal img{
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-    }
-
-    /*contacto*/
-
-    .contacto__text{
-        padding: 20px 15px 20px;
-        text-align: center;
-    }  
-    
-    .contacto__text p{
-        padding: 0;
-        margin: 0;
-    }
-    
-    .btn-color{
-        background-color: rgba(226, 226, 226, 1);
     }
 
     .section-form{
         height: 62vh;
     }
-  }
+    
+    .row-gal{
+        margin: 20px;
+        background-color: rgba(44, 92, 71, 0.687);
+        border-radius: 10px;
+    }
 
-  /*DESKTOP LARGE*/
+    .row-gal img{
+        width: 100%;
+        height: 100%;
+        padding: 12px 0px;
+    }
+}
 
-@media only screen and (min-width: 1200px){
+/*DESKTOP LARGE*/
+
+@media only screen and (min-width: 1200px){  
     
     /*header*/
-
 
     .nav{
         margin-right: 60px;
     }
-
+    
     .dropmenu{
         display: none;
     }
-
+    
     .navbar-collapse{
         flex-grow: 0;
     }
@@ -596,7 +361,7 @@ header{
         transition: transform 0.9s;
         transition: 1s;
     }
-
+    
     .nav-link--a:hover{
         color: white; transition: 1s;
         transform: scale(1.1);
@@ -614,6 +379,24 @@ header{
     .logoimg:hover{
         transform: rotate(360deg);
     }    
+    
+    .section-form{
+        height: 64vh;
+    }
+
+    .row-gal{
+        margin: 20px;
+        background-color: rgba(44, 92, 71, 0.687);
+        border-radius: 10px;
+    }
+
+    .row-gal img{
+        width: 100%;
+        height: 100%;
+        padding: 10px 0px;
+    }
+        
+}
 
     footer{
         background-color: rgba(45, 96, 74, 1);
@@ -628,167 +411,12 @@ header{
         width: 150px;
         margin: 10px 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;   
     }
 
     .footer__redes img{
         height: 100%;
         width: 100%;
+        padding: 0 5px;
     }
 
-      /*index*/
-
-      .pearljam{
-        background-image: url(../img/fondos/fondopearljam.jpg);
-        height: 90vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .bio__text h2{
-        padding: 20px 0;
-        margin: 0;
-     
-    }
-
-    .bio__text p{
-        padding: 0 20px;
-    }
-
-    .productos{
-        margin-bottom: 10px;
-    }
-
-    /*tienda*/
-
-    .container__title{
-        background-color: rgba(226, 226, 226, 1);
-        height: 10vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8em;
-    }
-
-    .container__title h1{
-        -webkit-animation: roll-in-left 0.6s ease-out both;
-        animation: roll-in-left 0.6s ease-out both;
-    }
-
-    @-webkit-keyframes roll-in-left {
-        0% {
-          -webkit-transform: translateX(-800px) rotate(-540deg);
-                  transform: translateX(-800px) rotate(-540deg);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0) rotate(0deg);
-                  transform: translateX(0) rotate(0deg);
-          opacity: 1;
-        }
-      }
-      @keyframes roll-in-left {
-        0% {
-          -webkit-transform: translateX(-800px) rotate(-540deg);
-                  transform: translateX(-800px) rotate(-540deg);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0) rotate(0deg);
-                  transform: translateX(0) rotate(0deg);
-          opacity: 1;
-        }
-      }
-
-    .container__productos{
-        padding: 0 50px 20px;
-    }
-
-    .container__productos h2{
-        padding: 20px 0;
-        margin: 0;
-        font-size: 1.3em;
-    }
-
-    .col-flex{
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-    }
-
-    .btn-color{
-        background-color: rgba(226, 226, 226, 1);
-    }
-
-    /*discografia*/
- 
-    .container-fluid--disc{
-        margin-top: 15px;
-    }
-    
-    .img-carousel{
-        height: 700px;
-    }
-
-    .disco__text h2{
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.3em;
-    }
-
-    .disco__text p{
-        padding: 0px 20px;
-    }
-
-    .container__ifr{
-        display: flex;
-    }
-
-    iframe{
-        padding: 10px 20px 20px;
-        width: 100%;
-        height: 400px;
-    }
-
-    /*galeria*/
-
-    .row-gal{
-        display: flex;
-        justify-content: center;
-    }
-
-    .row-gal img{
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-    }
-
-    .img-gal{
-        height: 1200px;
-    }
-
-     /*contacto*/
-
-     .contacto__text{
-        padding: 20px 15px 20px;
-        text-align: center;
-        width: 40%;
-        margin: 0 auto;
-    }  
-    
-    .contacto__text p{
-        padding: 0;
-        margin: 0;
-    }
-    
-    .btn-color{
-        background-color: rgba(226, 226, 226, 1);
-    }
-
-    .section-form{
-        height: 64vh;
-    }
-
-}
-         
