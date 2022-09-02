@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*VARIABLES COLORES*/
+header {
+  background-color: rgb(45, 96, 74);
+}
+
+/*mobile*/
+@media only screen and (max-width: 767px) {
+  /*header*/
+  .menu-logo {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: none;
+  }
+  .nav-item a {
+    color: rgb(199, 198, 198);
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  .logoimg {
+    height: 80px;
+    transition: transform 0.9s;
+  }
+  .logoimg:hover {
+    transform: rotate(360deg);
+  }
+  /*footer*/
+  footer {
+    background-color: rgb(45, 96, 74);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__redes {
+    height: 30px;
+    width: 150px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .footer__redes .footer__redes--img {
+    height: 100%;
+    width: 100%;
+  }
+  /*INDEX*/
+  .pearljam {
+    background-image: url(../img/fondos/fondopearljam.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .bio__text .h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .bio__text p {
+    padding: 0 20px;
+  }
+  /*TIENDA*/
+  .productos {
+    margin-bottom: 10px;
+  }
+  .container__title {
+    background-color: rgb(226, 226, 226);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+  }
+  .container__productos {
+    padding: 0 50px 20px;
+  }
+  .container__productos h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .col-flex {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .btn-color {
+    background-color: rgb(199, 198, 198);
+  }
+  /*DISCOGRAFIA*/
+  .container-fluid--disc {
+    margin-top: 15px;
+  }
+  .img-carousel {
+    height: 220px;
+    width: 100%;
+  }
+  .disco__text h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .disco__text p {
+    padding: 0px 20px;
+  }
+  iframe {
+    padding: 10px 20px 20px;
+    width: 100%;
+    height: 400px;
+  }
+  /*GALERIA*/
+  .row-gal img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  /*CONTACTO*/
+  .contacto__text {
+    padding: 15px 15px 15px;
+  }
+  .contacto__text p {
+    padding: 0;
+    margin: 0;
+  }
+  .section-form {
+    padding-bottom: 15px;
+  }
+  .btn-color {
+    background-color: rgb(199, 198, 198);
+  }
+}
+/*TABLET*/
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  /*header*/
+  .dropmenu {
+    display: none;
+  }
+  .container-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-item .nav-link--a {
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  .logoimg {
+    height: 80px;
+    transition: transform 0.9s;
+  }
+  .logoimg:hover {
+    transform: rotate(360deg);
+  }
+  /*footer*/
+  footer {
+    background-color: rgb(45, 96, 74);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__redes {
+    height: 30px;
+    width: 150px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .footer__redes .footer__redes--img {
+    height: 100%;
+    width: 100%;
+  }
+  /*index*/
+  .pearljam {
+    background-image: url(../img/fondos/fondopearljam.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .bio__text h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .bio__text p {
+    padding: 0 20px;
+  }
+  /*tienda*/
+  .productos {
+    margin-bottom: 10px;
+  }
+  .container__title {
+    background-color: rgb(226, 226, 226);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+  }
+  .container__productos {
+    padding: 0 50px 20px;
+  }
+  .container__productos h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .col-flex {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .btn-color {
+    background-color: rgb(199, 198, 198);
+  }
+  /*discografia*/
+  .container-fluid--disc {
+    margin-top: 15px;
+  }
+  .img-carousel {
+    height: 400px;
+    width: 100%;
+  }
+  .disco__text h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .disco__text p {
+    padding: 0px 20px;
+  }
+  iframe {
+    padding: 10px 20px 20px;
+    width: 100%;
+    height: 400px;
+  }
+  /*galeria*/
+  .row-gal img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  /*contacto*/
+  .contacto__text {
+    padding: 20px 15px 20px;
+    text-align: center;
+  }
+  .contacto__text p {
+    padding: 0;
+    margin: 0;
+  }
+  .btn-color {
+    background-color: rgb(199, 198, 198);
+  }
+  .section-form {
+    height: 65vh;
+  }
+}
+/*DESKTOP*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /*header*/
+  .nav {
+    margin-right: 60px;
+  }
+  .dropmenu {
+    display: none;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .nav-link--a {
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: transform 0.9s;
+    transition: 1s;
+  }
+  .nav-link--a:hover {
+    color: white;
+    transition: 1s;
+    transform: scale(1.1);
+  }
+  .ancla-img {
+    margin-left: 80px;
+  }
+  .ancla-img .logoimg {
+    height: 90px;
+    transition: transform 0.9s;
+  }
+  .logoimg:hover {
+    transform: rotate(360deg);
+  }
+  /*footer*/
+  footer {
+    background-color: rgb(45, 96, 74);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__redes {
+    height: 30px;
+    width: 150px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .footer__redes .footer__redes--img {
+    height: 100%;
+    width: 100%;
+  }
+  /*index*/
+  .pearljam {
+    background-image: url(../img/fondos/fondopearljam.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .bio__text h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .bio__text p {
+    padding: 0 20px;
+  }
+  /*tienda*/
+  .productos {
+    margin-bottom: 10px;
+  }
+  .container__title {
+    background-color: rgb(226, 226, 226);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+  }
+  .container__title h1 {
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+  }
+  @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  .container__productos {
+    padding: 0 50px 20px;
+  }
+  .container__productos h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .col-flex {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .btn-color {
+    background-color: rgb(199, 198, 198);
+  }
+  /*discografia*/
+  .container-fluid--disc {
+    margin-top: 15px;
+  }
+  .img-carousel {
+    height: 600px;
+    width: 100%;
+  }
+  .disco__text h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .disco__text p {
+    padding: 0px 20px;
+  }
+  iframe {
+    padding: 10px 20px 20px;
+    width: 100%;
+    height: 400px;
+  }
+  /*galeria*/
+  .row-gal img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  /*contacto*/
+  .contacto__text {
+    padding: 20px 15px 20px;
+    text-align: center;
+  }
+  .contacto__text p {
+    padding: 0;
+    margin: 0;
+  }
+  .btn-color {
+    background-color: rgb(199, 198, 198);
+  }
+  .section-form {
+    height: 62vh;
+  }
+}
+/*DESKTOP LARGE*/
+@media only screen and (min-width: 1200px) {
+  /*header*/
+  .nav {
+    margin-right: 60px;
+  }
+  .dropmenu {
+    display: none;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .nav-link--a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: transform 0.9s;
+    transition: 1s;
+    color: black;
+    font-weight: 500;
+  }
+  .nav-link--a:hover {
+    color: white;
+    transition: 1s;
+    transform: scale(1.1);
+  }
+  .ancla-img {
+    margin-left: 80px;
+  }
+  .ancla-img .logoimg {
+    transition: transform 0.9s;
+    height: 90px;
+  }
+  .logoimg:hover {
+    transform: rotate(360deg);
+  }
+  footer {
+    background-color: rgb(45, 96, 74);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__redes {
+    height: 30px;
+    width: 150px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .footer__redes .footer__redes--img {
+    height: 100%;
+    width: 100%;
+  }
+  /*index*/
+  .pearljam {
+    background-image: url(../img/fondos/fondopearljam.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .bio__text h2 {
+    padding: 20px 0;
+    margin: 0;
+  }
+  .bio__text p {
+    padding: 0 20px;
+  }
+  /*tienda*/
+  .productos {
+    margin-bottom: 10px;
+  }
+  .container__title {
+    background-color: rgb(226, 226, 226);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+  }
+  .container__title h1 {
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+  }
+  @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  .container__productos {
+    padding: 0 50px 20px;
+  }
+  .container__productos h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .col-flex {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .btn-color {
+    background-color: rgb(199, 198, 198);
+  }
+  /*discografia*/
+  .container-fluid--disc {
+    margin-top: 15px;
+  }
+  .img-carousel {
+    height: 700px;
+  }
+  .disco__text h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .disco__text p {
+    padding: 0px 20px;
+  }
+  .container__ifr {
+    display: flex;
+  }
+  iframe {
+    padding: 10px 20px 20px;
+    width: 100%;
+    height: 400px;
+  }
+  /*galeria*/
+  .row-gal {
+    display: flex;
+    justify-content: center;
+  }
+  .row-gal img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .img-gal {
+    height: 1200px;
+  }
+  /*contacto*/
+  .contacto__text {
+    padding: 20px 15px 20px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .contacto__text p {
+    padding: 0;
+    margin: 0;
+  }
+  .btn-color {
+    background-color: rgb(199, 198, 198);
+  }
+  .section-form {
+    height: 64vh;
+  }
+}
+
+/*# sourceMappingURL=styles-sass.css.map */
