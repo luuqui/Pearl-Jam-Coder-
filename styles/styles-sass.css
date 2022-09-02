@@ -1,38 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-<<<<<<< HEAD
-/*VARIABLES COLORES*/
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
 header {
   background-color: rgb(45, 96, 74);
 }
 
-<<<<<<< HEAD
-/*mobile*/
-@media only screen and (max-width: 767px) {
-  /*header*/
-=======
 /*MOBILE*/
 @media only screen and (max-width: 767px) {
->>>>>>> parent of e806d83 (ultimo proyecto final)
   .menu-logo {
     height: 100%;
     width: 100%;
     border: none;
     background-color: none;
   }
-<<<<<<< HEAD
-  .nav-item a {
-    color: rgb(199, 198, 198);
-=======
   .nav-item .nav-link--a {
     color: black;
->>>>>>> parent of e806d83 (ultimo proyecto final)
     font-weight: 500;
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -45,27 +24,6 @@ header {
   .logoimg:hover {
     transform: rotate(360deg);
   }
-<<<<<<< HEAD
-  /*footer*/
-  footer {
-    background-color: rgb(45, 96, 74);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .footer__redes {
-    height: 30px;
-    width: 150px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  footer .footer__redes .footer__redes--img {
-    height: 100%;
-    width: 100%;
-  }
-=======
 }
 /*TABLET*/
 @media only screen and (min-width: 576px) and (max-width: 991px) {
@@ -173,729 +131,34 @@ footer {
 footer .footer__redes {
   height: 30px;
   width: 150px;
-  margin: 10px 0;
+  margin: 10px 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 footer .footer__redes .footer__redes--img {
   height: 100%;
   width: 100%;
+  padding: 0 5px;
 }
 
-@media only screen and (max-width: 767px) {
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*INDEX*/
-  .pearljam {
-    background-image: url(../img/fondos/fondopearljam.jpg);
-    height: 90vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-<<<<<<< HEAD
-  .bio__text .h2 {
-=======
-  .bio__text h2 {
->>>>>>> parent of e806d83 (ultimo proyecto final)
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
-  .bio__text p {
-    padding: 0 20px;
-  }
-  /*TIENDA*/
-<<<<<<< HEAD
-  .productos {
-    margin-bottom: 10px;
-  }
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  .container__title {
-    background-color: rgb(226, 226, 226);
-    height: 10vh;
-    display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8em;
-  }
-  .container__productos {
-    padding: 0 50px 20px;
-  }
-  .container__productos h2 {
-=======
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8em;
-  }
-  .productos {
-    margin-bottom: 10px;
-  }
-  .productos .container__productos {
-    padding: 0 50px 20px;
-  }
-  .productos .container__productos h2 {
->>>>>>> parent of e806d83 (ultimo proyecto final)
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
-  .col-flex {
-    display: flex;
-    justify-content: center;
-<<<<<<< HEAD
-    padding: 10px 0;
-  }
-  .btn-color {
-    background-color: rgb(199, 198, 198);
-  }
-=======
-    align-items: none;
-    padding: 10px 0;
-  }
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*DISCOGRAFIA*/
-  .container-fluid--disc {
-    margin-top: 15px;
-  }
-  .img-carousel {
-    height: 220px;
-    width: 100%;
-  }
-  .disco__text h2 {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.3em;
-  }
-  .disco__text p {
-    padding: 0px 20px;
-  }
-  iframe {
-    padding: 10px 20px 20px;
-    width: 100%;
-    height: 400px;
-  }
-  /*GALERIA*/
-  .row-gal img {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-  }
-  /*CONTACTO*/
-  .contacto__text {
-    padding: 15px 15px 15px;
-  }
-  .contacto__text p {
-    padding: 0;
-    margin: 0;
-  }
-  .section-form {
-    padding-bottom: 15px;
-  }
-<<<<<<< HEAD
-  .btn-color {
-    background-color: rgb(199, 198, 198);
-  }
+h1 {
+  font-size: 2.2em;
 }
-/*TABLET*/
-@media only screen and (min-width: 576px) and (max-width: 991px) {
-  /*header*/
-  .dropmenu {
-    display: none;
-  }
-  .container-header {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-item .nav-link--a {
-    color: black;
-    font-weight: 500;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-  }
-  .logoimg {
-    height: 80px;
-    transition: transform 0.9s;
-  }
-  .logoimg:hover {
-    transform: rotate(360deg);
-  }
-  /*footer*/
-  footer {
-    background-color: rgb(45, 96, 74);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .footer__redes {
-    height: 30px;
-    width: 150px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  footer .footer__redes .footer__redes--img {
-    height: 100%;
-    width: 100%;
-  }
-=======
+
+h2 {
+  font-size: 1.8em;
 }
-@media only screen and (min-width: 576px) and (max-width: 991px) {
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*index*/
-  .pearljam {
-    background-image: url(../img/fondos/fondopearljam.jpg);
-    height: 90vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .bio__text h2 {
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
-  .bio__text p {
-    padding: 0 20px;
-  }
-  /*tienda*/
-<<<<<<< HEAD
-  .productos {
-    margin-bottom: 10px;
-  }
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  .container__title {
-    background-color: rgb(226, 226, 226);
-    height: 10vh;
-    display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8em;
-  }
-  .container__productos {
-    padding: 0 50px 20px;
-  }
-  .container__productos h2 {
-=======
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8em;
-  }
-  .productos {
-    margin-bottom: 10px;
-  }
-  .productos .container__productos {
-    padding: 0 50px 20px;
-  }
-  .productos .container__productos h2 {
->>>>>>> parent of e806d83 (ultimo proyecto final)
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
-  .col-flex {
-    display: flex;
-    justify-content: center;
-<<<<<<< HEAD
-    padding: 10px 0;
-  }
-  .btn-color {
-    background-color: rgb(199, 198, 198);
-  }
-=======
-    align-items: none;
-    padding: 10px 0;
-  }
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*discografia*/
-  .container-fluid--disc {
-    margin-top: 15px;
-  }
-  .img-carousel {
-    height: 400px;
-    width: 100%;
-  }
-  .disco__text h2 {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.3em;
-  }
-  .disco__text p {
-    padding: 0px 20px;
-  }
-  iframe {
-    padding: 10px 20px 20px;
-    width: 100%;
-    height: 400px;
-  }
-  /*galeria*/
-  .row-gal img {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-  }
-  /*contacto*/
-  .contacto__text {
-    padding: 20px 15px 20px;
-    text-align: center;
-  }
-  .contacto__text p {
-    padding: 0;
-    margin: 0;
-  }
-<<<<<<< HEAD
-  .btn-color {
-    background-color: rgb(199, 198, 198);
-  }
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  .section-form {
-    height: 65vh;
-  }
+
+h3 {
+  font-size: 1.3em;
 }
-<<<<<<< HEAD
-/*DESKTOP*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /*header*/
-  .nav {
-    margin-right: 60px;
-  }
-  .dropmenu {
-    display: none;
-  }
-  .navbar-collapse {
-    flex-grow: 0;
-  }
-  .nav-link--a {
-    color: black;
-    font-weight: 500;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: transform 0.9s;
-    transition: 1s;
-  }
-  .nav-link--a:hover {
-    color: white;
-    transition: 1s;
-    transform: scale(1.1);
-  }
-  .ancla-img {
-    margin-left: 80px;
-  }
-  .ancla-img .logoimg {
-    height: 90px;
-    transition: transform 0.9s;
-  }
-  .logoimg:hover {
-    transform: rotate(360deg);
-  }
-  /*footer*/
-  footer {
-    background-color: rgb(45, 96, 74);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .footer__redes {
-    height: 30px;
-    width: 150px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  footer .footer__redes .footer__redes--img {
-    height: 100%;
-    width: 100%;
-  }
-=======
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*index*/
-  .pearljam {
-    background-image: url(../img/fondos/fondopearljam.jpg);
-    height: 90vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .bio__text h2 {
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
-  .bio__text p {
-    padding: 0 20px;
-  }
-  /*tienda*/
-<<<<<<< HEAD
-  .productos {
-    margin-bottom: 10px;
-  }
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  .container__title {
-    background-color: rgb(226, 226, 226);
-    height: 10vh;
-    display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    justify-content: center;
-=======
-    justify-content: center;
-    align-items: center;
->>>>>>> parent of e806d83 (ultimo proyecto final)
-    font-size: 1.8em;
-  }
-  .container__title h1 {
-    -webkit-animation: roll-in-left 0.6s ease-out both;
-    animation: roll-in-left 0.6s ease-out both;
-  }
-<<<<<<< HEAD
-=======
-  .productos {
-    margin-bottom: 10px;
-  }
-  .productos .container__productos {
-    padding: 0 50px 20px;
-  }
-  .productos .container__productos h2 {
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  @-webkit-keyframes roll-in-left {
-    0% {
-      -webkit-transform: translateX(-800px) rotate(-540deg);
-      transform: translateX(-800px) rotate(-540deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0) rotate(0deg);
-      transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-  }
-  @keyframes roll-in-left {
-    0% {
-      -webkit-transform: translateX(-800px) rotate(-540deg);
-      transform: translateX(-800px) rotate(-540deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0) rotate(0deg);
-      transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-  }
-<<<<<<< HEAD
-  .container__productos {
-    padding: 0 50px 20px;
-  }
-  .container__productos h2 {
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
-  .col-flex {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-  }
-  .btn-color {
-    background-color: rgb(199, 198, 198);
-  }
-=======
-  .col-flex {
-    display: flex;
-    justify-content: center;
-    align-items: none;
-    padding: 10px 0;
-  }
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*discografia*/
-  .container-fluid--disc {
-    margin-top: 15px;
-  }
-  .img-carousel {
-    height: 600px;
-    width: 100%;
-  }
-  .disco__text h2 {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.3em;
-  }
-  .disco__text p {
-    padding: 0px 20px;
-  }
-  iframe {
-    padding: 10px 20px 20px;
-    width: 100%;
-    height: 400px;
-  }
-  /*galeria*/
-  .row-gal img {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-  }
-  /*contacto*/
-  .contacto__text {
-    padding: 20px 15px 20px;
-    text-align: center;
-  }
-  .contacto__text p {
-    padding: 0;
-    margin: 0;
-  }
-<<<<<<< HEAD
-  .btn-color {
-    background-color: rgb(199, 198, 198);
-  }
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  .section-form {
-    height: 62vh;
-  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-<<<<<<< HEAD
-/*DESKTOP LARGE*/
-@media only screen and (min-width: 1200px) {
-  /*header*/
-  .nav {
-    margin-right: 60px;
-  }
-  .dropmenu {
-    display: none;
-  }
-  .navbar-collapse {
-    flex-grow: 0;
-  }
-  .nav-link--a {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: transform 0.9s;
-    transition: 1s;
-    color: black;
-    font-weight: 500;
-  }
-  .nav-link--a:hover {
-    color: white;
-    transition: 1s;
-    transform: scale(1.1);
-  }
-  .ancla-img {
-    margin-left: 80px;
-  }
-  .ancla-img .logoimg {
-    transition: transform 0.9s;
-    height: 90px;
-  }
-  .logoimg:hover {
-    transform: rotate(360deg);
-  }
-  footer {
-    background-color: rgb(45, 96, 74);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .footer__redes {
-    height: 30px;
-    width: 150px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  footer .footer__redes .footer__redes--img {
-    height: 100%;
-    width: 100%;
-  }
-=======
-@media only screen and (min-width: 1200px) {
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*index*/
-  .pearljam {
-    background-image: url(../img/fondos/fondopearljam.jpg);
-    height: 90vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .bio__text h2 {
-    padding: 20px 0;
-    margin: 0;
-  }
-  .bio__text p {
-    padding: 0 20px;
-  }
-  /*tienda*/
-<<<<<<< HEAD
-  .productos {
-    margin-bottom: 10px;
-  }
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  .container__title {
-    background-color: rgb(226, 226, 226);
-    height: 10vh;
-    display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    justify-content: center;
-=======
-    justify-content: center;
-    align-items: center;
->>>>>>> parent of e806d83 (ultimo proyecto final)
-    font-size: 1.8em;
-  }
-  .container__title h1 {
-    -webkit-animation: roll-in-left 0.6s ease-out both;
-    animation: roll-in-left 0.6s ease-out both;
-  }
-<<<<<<< HEAD
-=======
-  .productos {
-    margin-bottom: 10px;
-  }
-  .productos .container__productos {
-    padding: 0 50px 20px;
-  }
-  .productos .container__productos h2 {
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  @-webkit-keyframes roll-in-left {
-    0% {
-      -webkit-transform: translateX(-800px) rotate(-540deg);
-      transform: translateX(-800px) rotate(-540deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0) rotate(0deg);
-      transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-  }
-  @keyframes roll-in-left {
-    0% {
-      -webkit-transform: translateX(-800px) rotate(-540deg);
-      transform: translateX(-800px) rotate(-540deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0) rotate(0deg);
-      transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-  }
-<<<<<<< HEAD
-  .container__productos {
-    padding: 0 50px 20px;
-  }
-  .container__productos h2 {
-    padding: 20px 0;
-    margin: 0;
-    font-size: 1.3em;
-  }
-  .col-flex {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-  }
-  .btn-color {
-    background-color: rgb(199, 198, 198);
-  }
-=======
-  .col-flex {
-    display: flex;
-    justify-content: center;
-    align-items: none;
-    padding: 10px 0;
-  }
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*discografia*/
-  .container-fluid--disc {
-    margin-top: 15px;
-  }
-  .img-carousel {
-    height: 700px;
-  }
-  .disco__text h2 {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.3em;
-  }
-  .disco__text p {
-    padding: 0px 20px;
-  }
-  .container__ifr {
-    display: flex;
-  }
-<<<<<<< HEAD
-  iframe {
-=======
-  .container__ifr iframe {
->>>>>>> parent of e806d83 (ultimo proyecto final)
-    padding: 10px 20px 20px;
-    width: 100%;
-    height: 400px;
-  }
-  /*galeria*/
-  .row-gal {
-    display: flex;
-    justify-content: center;
-<<<<<<< HEAD
-=======
-    align-items: none;
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  }
-  .row-gal img {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-  }
-<<<<<<< HEAD
-  .img-gal {
-    height: 1200px;
-  }
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  /*contacto*/
-  .contacto__text {
-    padding: 20px 15px 20px;
-    text-align: center;
-    width: 40%;
-    margin: 0 auto;
-  }
-  .contacto__text p {
-    padding: 0;
-    margin: 0;
-  }
-<<<<<<< HEAD
-  .btn-color {
-    background-color: rgb(199, 198, 198);
-  }
-=======
->>>>>>> parent of e806d83 (ultimo proyecto final)
-  .section-form {
-    height: 64vh;
-  }
-}
-<<<<<<< HEAD
-=======
+
 .btn, .btn-color, .btn-tn {
   border-radius: 15px;
   padding: 5px 10px;
@@ -904,6 +167,189 @@ footer .footer__redes .footer__redes--img {
 .btn-color {
   background-color: rgb(199, 198, 198);
 }
->>>>>>> parent of e806d83 (ultimo proyecto final)
+
+/*index*/
+.pearljam {
+  background-image: url(../img/fondos/fondopearljam.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bio__text h1 {
+  padding: 15px 0px 5px;
+}
+.bio__text h2 {
+  padding: 5px 0;
+  margin: 0;
+}
+.bio__text h3 {
+  padding: 5px 0;
+}
+.bio__text p {
+  padding: 0 20px;
+}
+
+/*tienda*/
+.container__title {
+  background-color: rgb(226, 226, 226);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__title h2 {
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+}
+
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.container__productos {
+  padding: 0 50px 20px;
+}
+.container__productos h3 {
+  padding: 20px 0;
+  margin: 0;
+}
+
+.col-flex {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+/*discografia*/
+.disco__text {
+  padding: 1em 2em;
+}
+.disco__text h3 {
+  text-align: center;
+}
+.disco__text p {
+  padding: 0px 20px;
+}
+
+.container__ifr {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+}
+.container__ifr iframe {
+  padding: 10px 20px 20px;
+  width: 100%;
+  height: 400px;
+}
+
+@media only screen and (max-width: 767px) {
+  .row-gal {
+    margin: 20px;
+    background-color: rgba(44, 92, 71, 0.687);
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .row-gal img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+}
+/*TABLET*/
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .row-gal {
+    margin: 20px;
+    background-color: rgba(44, 92, 71, 0.687);
+    border-radius: 10px;
+  }
+  .row-gal img {
+    width: 100%;
+    height: 100%;
+    padding: 12px 0px;
+  }
+}
+/*DESKTOP*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .row-gal {
+    margin: 20px;
+    background-color: rgba(44, 92, 71, 0.687);
+    border-radius: 10px;
+  }
+  .row-gal img {
+    width: 100%;
+    height: 100%;
+    padding: 12px 0px;
+  }
+}
+/*DESKTOP LARGE*/
+@media only screen and (min-width: 1200px) {
+  .row-gal {
+    margin: 20px;
+    background-color: rgba(44, 92, 71, 0.687);
+    border-radius: 10px;
+  }
+  .row-gal img {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+  }
+}
+/*contacto*/
+.contacto {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.contacto .contacto__text {
+  padding: 15px 15px 15px;
+  width: 800px;
+  text-align: center;
+}
+.contacto .contacto__text p {
+  padding: 0;
+  margin: 0;
+}
+
+.section-form {
+  padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-form {
+    height: 62vh;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .section-form {
+    height: 65vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section-form {
+    height: 64vh;
+  }
+}
 
 /*# sourceMappingURL=styles-sass.css.map */

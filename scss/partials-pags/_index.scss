@@ -1,0 +1,25 @@
+/*index*/
+
+.pearljam{
+    background-image: url(../img/fondos/fondopearljam.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bio__text{
+    h1{
+        padding: 15px 0px 5px;
+    }
+    h2{
+        padding: 5px 0;
+        margin: 0;
+    }
+    h3{
+        padding: 5px 0;
+    }
+    p{
+        padding: 0 20px;
+    }
+}
