@@ -1,0 +1,101 @@
+@import "mixin";
+@media only screen and (min-width: 576px) and (max-width:991px){
+/*index*/
+.pearljam{
+    background-image: url(../img/fondos/fondopearljam.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bio__text {
+    h2{
+        padding: 20px 0;
+        margin: 0;
+        font-size: 1.3em;
+    }
+    p{
+        padding: 0 20px;
+    }
+}
+
+/*tienda*/
+.container__title{
+    background-color: map-get($paleta, "title");
+    height: 10vh;
+    @include caja-flex (center, center);
+    font-size: 1.8em;
+}
+
+.productos{
+    margin-bottom: 10px;
+    .container__productos{
+        padding: 0 50px 20px;
+        h2{
+            padding: 20px 0;
+            margin: 0;
+            font-size: 1.3em;
+        }
+    }
+}
+
+.col-flex{
+    @include caja-flex (center, none);
+    padding: 10px 0;
+}
+
+/*discografia*/
+
+.container-fluid--disc{
+    margin-top: 15px;
+}
+
+.img-carousel{
+    height: 400px;
+    width: 100%;
+}
+
+.disco__text {
+    h2{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    p{
+        padding: 0px 20px;
+    }
+}
+
+iframe{
+    padding: 10px 20px 20px;
+    width: 100%;
+    height: 400px;
+}
+
+/*galeria*/
+
+.row-gal {
+    img{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+/*contacto*/
+
+.contacto__text{
+    padding: 20px 15px 20px;
+    text-align: center;
+    p{
+        padding: 0;
+        margin: 0;
+    }
+}  
+
+.section-form{
+    height: 65vh;
+}
+
+}

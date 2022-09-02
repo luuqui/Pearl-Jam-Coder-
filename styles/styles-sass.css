@@ -4,22 +4,35 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /*VARIABLES COLORES*/
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
 header {
   background-color: rgb(45, 96, 74);
 }
 
+<<<<<<< HEAD
 /*mobile*/
 @media only screen and (max-width: 767px) {
   /*header*/
+=======
+/*MOBILE*/
+@media only screen and (max-width: 767px) {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   .menu-logo {
     height: 100%;
     width: 100%;
     border: none;
     background-color: none;
   }
+<<<<<<< HEAD
   .nav-item a {
     color: rgb(199, 198, 198);
+=======
+  .nav-item .nav-link--a {
+    color: black;
+>>>>>>> parent of e806d83 (ultimo proyecto final)
     font-weight: 500;
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -32,6 +45,7 @@ header {
   .logoimg:hover {
     transform: rotate(360deg);
   }
+<<<<<<< HEAD
   /*footer*/
   footer {
     background-color: rgb(45, 96, 74);
@@ -51,6 +65,125 @@ header {
     height: 100%;
     width: 100%;
   }
+=======
+}
+/*TABLET*/
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .dropmenu {
+    display: none;
+  }
+  .container-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-item .nav-link--a {
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  .logoimg {
+    height: 80px;
+    transition: transform 0.9s;
+  }
+  .logoimg:hover {
+    transform: rotate(360deg);
+  }
+}
+/*DESKTOP*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav {
+    margin-right: 60px;
+  }
+  .dropmenu {
+    display: none;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .nav-link--a {
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: transform 0.9s;
+    transition: 1s;
+  }
+  .nav-link--a:hover {
+    color: white;
+    transition: 1s;
+    transform: scale(1.1);
+  }
+  .ancla-img {
+    margin-left: 80px;
+  }
+  .ancla-img .logoimg {
+    height: 90px;
+    transition: transform 0.9s;
+  }
+  .ancla-img .logoimg:hover {
+    transform: rotate(360deg);
+  }
+}
+/*DESKTOP LARGE*/
+@media only screen and (min-width: 1200px) {
+  .nav {
+    margin-right: 60px;
+  }
+  .dropmenu {
+    display: none;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .nav-link--a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: transform 0.9s;
+    transition: 1s;
+    color: black;
+    font-weight: 500;
+  }
+  .nav-link--a:hover {
+    color: white;
+    transition: 1s;
+    transform: scale(1.1);
+  }
+  .ancla-img {
+    margin-left: 80px;
+  }
+  .ancla-img .logoimg {
+    transition: transform 0.9s;
+    height: 90px;
+  }
+  .ancla-img .logoimg:hover {
+    transform: rotate(360deg);
+  }
+}
+footer {
+  background-color: rgb(45, 96, 74);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer__redes {
+  height: 30px;
+  width: 150px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer__redes .footer__redes--img {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*INDEX*/
   .pearljam {
     background-image: url(../img/fondos/fondopearljam.jpg);
@@ -59,7 +192,11 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
   }
+<<<<<<< HEAD
   .bio__text .h2 {
+=======
+  .bio__text h2 {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
     padding: 20px 0;
     margin: 0;
     font-size: 1.3em;
@@ -68,13 +205,17 @@ header {
     padding: 0 20px;
   }
   /*TIENDA*/
+<<<<<<< HEAD
   .productos {
     margin-bottom: 10px;
   }
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   .container__title {
     background-color: rgb(226, 226, 226);
     height: 10vh;
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     font-size: 1.8em;
@@ -83,6 +224,19 @@ header {
     padding: 0 50px 20px;
   }
   .container__productos h2 {
+=======
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+  }
+  .productos {
+    margin-bottom: 10px;
+  }
+  .productos .container__productos {
+    padding: 0 50px 20px;
+  }
+  .productos .container__productos h2 {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
     padding: 20px 0;
     margin: 0;
     font-size: 1.3em;
@@ -90,11 +244,17 @@ header {
   .col-flex {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     padding: 10px 0;
   }
   .btn-color {
     background-color: rgb(199, 198, 198);
   }
+=======
+    align-items: none;
+    padding: 10px 0;
+  }
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*DISCOGRAFIA*/
   .container-fluid--disc {
     margin-top: 15px;
@@ -133,6 +293,7 @@ header {
   .section-form {
     padding-bottom: 15px;
   }
+<<<<<<< HEAD
   .btn-color {
     background-color: rgb(199, 198, 198);
   }
@@ -180,6 +341,10 @@ header {
     height: 100%;
     width: 100%;
   }
+=======
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*index*/
   .pearljam {
     background-image: url(../img/fondos/fondopearljam.jpg);
@@ -197,13 +362,17 @@ header {
     padding: 0 20px;
   }
   /*tienda*/
+<<<<<<< HEAD
   .productos {
     margin-bottom: 10px;
   }
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   .container__title {
     background-color: rgb(226, 226, 226);
     height: 10vh;
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     font-size: 1.8em;
@@ -212,6 +381,19 @@ header {
     padding: 0 50px 20px;
   }
   .container__productos h2 {
+=======
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+  }
+  .productos {
+    margin-bottom: 10px;
+  }
+  .productos .container__productos {
+    padding: 0 50px 20px;
+  }
+  .productos .container__productos h2 {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
     padding: 20px 0;
     margin: 0;
     font-size: 1.3em;
@@ -219,11 +401,17 @@ header {
   .col-flex {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     padding: 10px 0;
   }
   .btn-color {
     background-color: rgb(199, 198, 198);
   }
+=======
+    align-items: none;
+    padding: 10px 0;
+  }
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*discografia*/
   .container-fluid--disc {
     margin-top: 15px;
@@ -260,13 +448,17 @@ header {
     padding: 0;
     margin: 0;
   }
+<<<<<<< HEAD
   .btn-color {
     background-color: rgb(199, 198, 198);
   }
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   .section-form {
     height: 65vh;
   }
 }
+<<<<<<< HEAD
 /*DESKTOP*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /*header*/
@@ -322,6 +514,9 @@ header {
     height: 100%;
     width: 100%;
   }
+=======
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*index*/
   .pearljam {
     background-image: url(../img/fondos/fondopearljam.jpg);
@@ -339,21 +534,43 @@ header {
     padding: 0 20px;
   }
   /*tienda*/
+<<<<<<< HEAD
   .productos {
     margin-bottom: 10px;
   }
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   .container__title {
     background-color: rgb(226, 226, 226);
     height: 10vh;
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
+=======
+    justify-content: center;
+    align-items: center;
+>>>>>>> parent of e806d83 (ultimo proyecto final)
     font-size: 1.8em;
   }
   .container__title h1 {
     -webkit-animation: roll-in-left 0.6s ease-out both;
     animation: roll-in-left 0.6s ease-out both;
   }
+<<<<<<< HEAD
+=======
+  .productos {
+    margin-bottom: 10px;
+  }
+  .productos .container__productos {
+    padding: 0 50px 20px;
+  }
+  .productos .container__productos h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   @-webkit-keyframes roll-in-left {
     0% {
       -webkit-transform: translateX(-800px) rotate(-540deg);
@@ -378,6 +595,7 @@ header {
       opacity: 1;
     }
   }
+<<<<<<< HEAD
   .container__productos {
     padding: 0 50px 20px;
   }
@@ -394,6 +612,14 @@ header {
   .btn-color {
     background-color: rgb(199, 198, 198);
   }
+=======
+  .col-flex {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    padding: 10px 0;
+  }
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*discografia*/
   .container-fluid--disc {
     margin-top: 15px;
@@ -430,13 +656,17 @@ header {
     padding: 0;
     margin: 0;
   }
+<<<<<<< HEAD
   .btn-color {
     background-color: rgb(199, 198, 198);
   }
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   .section-form {
     height: 62vh;
   }
 }
+<<<<<<< HEAD
 /*DESKTOP LARGE*/
 @media only screen and (min-width: 1200px) {
   /*header*/
@@ -491,6 +721,9 @@ header {
     height: 100%;
     width: 100%;
   }
+=======
+@media only screen and (min-width: 1200px) {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*index*/
   .pearljam {
     background-image: url(../img/fondos/fondopearljam.jpg);
@@ -507,21 +740,43 @@ header {
     padding: 0 20px;
   }
   /*tienda*/
+<<<<<<< HEAD
   .productos {
     margin-bottom: 10px;
   }
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   .container__title {
     background-color: rgb(226, 226, 226);
     height: 10vh;
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
+=======
+    justify-content: center;
+    align-items: center;
+>>>>>>> parent of e806d83 (ultimo proyecto final)
     font-size: 1.8em;
   }
   .container__title h1 {
     -webkit-animation: roll-in-left 0.6s ease-out both;
     animation: roll-in-left 0.6s ease-out both;
   }
+<<<<<<< HEAD
+=======
+  .productos {
+    margin-bottom: 10px;
+  }
+  .productos .container__productos {
+    padding: 0 50px 20px;
+  }
+  .productos .container__productos h2 {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   @-webkit-keyframes roll-in-left {
     0% {
       -webkit-transform: translateX(-800px) rotate(-540deg);
@@ -546,6 +801,7 @@ header {
       opacity: 1;
     }
   }
+<<<<<<< HEAD
   .container__productos {
     padding: 0 50px 20px;
   }
@@ -562,6 +818,14 @@ header {
   .btn-color {
     background-color: rgb(199, 198, 198);
   }
+=======
+  .col-flex {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    padding: 10px 0;
+  }
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*discografia*/
   .container-fluid--disc {
     margin-top: 15px;
@@ -580,7 +844,11 @@ header {
   .container__ifr {
     display: flex;
   }
+<<<<<<< HEAD
   iframe {
+=======
+  .container__ifr iframe {
+>>>>>>> parent of e806d83 (ultimo proyecto final)
     padding: 10px 20px 20px;
     width: 100%;
     height: 400px;
@@ -589,15 +857,22 @@ header {
   .row-gal {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
+=======
+    align-items: none;
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   }
   .row-gal img {
     width: 100%;
     height: 100%;
     padding: 10px;
   }
+<<<<<<< HEAD
   .img-gal {
     height: 1200px;
   }
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   /*contacto*/
   .contacto__text {
     padding: 20px 15px 20px;
@@ -609,12 +884,26 @@ header {
     padding: 0;
     margin: 0;
   }
+<<<<<<< HEAD
   .btn-color {
     background-color: rgb(199, 198, 198);
   }
+=======
+>>>>>>> parent of e806d83 (ultimo proyecto final)
   .section-form {
     height: 64vh;
   }
 }
+<<<<<<< HEAD
+=======
+.btn, .btn-color, .btn-tn {
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.btn-color {
+  background-color: rgb(199, 198, 198);
+}
+>>>>>>> parent of e806d83 (ultimo proyecto final)
 
 /*# sourceMappingURL=styles-sass.css.map */
